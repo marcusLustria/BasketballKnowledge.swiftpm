@@ -10,4 +10,4 @@ struct ContentView: View {
         }
     }
 }
-
+Text("hello")
