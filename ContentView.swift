@@ -7,7 +7,7 @@ struct ContentView: View{
     var body: some View {
         NavigationView {
             VStack{
-                TextField("Go To", text: $myBasketballVisits.FirstNbaName)
+                TextField("Go To", text: $myBasketballVisits)
                     .textFieldStyle(.roundedBorder)
                 NavigationLink("Go To") {
                     FirstNbaView(myBasketBallVisits:$myBasketballVisits)

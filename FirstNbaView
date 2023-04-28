@@ -12,7 +12,7 @@ struct FirstStarView: View {
     @Binding var myBasketBallVisits:BasketballTravel
     
     var body: some View {
-        TextField("Go To", text: $myBasketballVisits.secondNbaName)
+        TextField("Go To", text: $myBasketballVisits)
             .textFieldStyle(.roundedBorder)
         NavigationLink("Go To") {
             SecondNbaView(myBasketBallVisits: $myBasketballVisits)
