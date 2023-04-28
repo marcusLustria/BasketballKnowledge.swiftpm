@@ -2,9 +2,11 @@ import SwiftUI
 
 @main
 struct MyApp: App {
-    var body: some Scene {
+    @State var myBasketballVisits:BasketballTravel = BasketballTravel()
+    var body: some Scene{
         WindowGroup {
-            ContentView()
+            ContentView(myBasketballVisits:$myBasketballVisits)
         }
     }
+    
 }
