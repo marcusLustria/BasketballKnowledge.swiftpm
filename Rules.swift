@@ -9,10 +9,11 @@ import SwiftUI
 
 struct Rules:View {
     
-    @Binding var NbaStats:Stats
+    @Binding var myNbaVisits:BasketballTravel
 
     var body: some View {
         
+        }
     }
     
-}
+
