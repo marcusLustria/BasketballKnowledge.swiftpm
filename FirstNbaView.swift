@@ -1,22 +1,22 @@
 //
-//  ChicagoBulls.swift
+//  FirstNbaView.swift
 //  BasketballKnowledge
 //
-//  Created by evan deveros  on 4/28/23.
+//  Created by evan deveros  on 5/2/23.
 //
 
 import SwiftUI
 
-struct FirstStarView: View {
+struct FirstNbaView: View {
     
     @Binding var myBasketBallVisits:BasketballTravel
-    
     var body: some View {
-        TextField("Go To", text: $myBasketballVisits)
+        TextField("Go To", text: $myBasketBallVisits.SecondNbaName)
             .textFieldStyle(.roundedBorder)
         NavigationLink("Go To") {
-            SecondNbaView(myBasketBallVisits: $myBasketballVisits)
+            SecondNbaView(myNbaVisits: $myBasketBallVisits)
         }
     }
 }
-Text
+
+

@@ -7,17 +7,16 @@ struct ContentView: View{
     var body: some View {
         NavigationView {
             VStack{
-                TextField("Go To", text: $myBasketballVisits)
+                TextField("Go To", text: $myBasketBallVisits.FirstNbaName)
                     .textFieldStyle(.roundedBorder)
                 NavigationLink("Go To") {
-                    FirstNbaView(myBasketBallVisits:$myBasketballVisits)
+                    FirstNbaView(myBasketBallVisits:$myBasketBallVisits)
                     
                 }
             }
             .navigationTitle("Basketball Knowledge")
-            .frame(maxWidth: .infinity, maxHeight: .infinity)
-            .backgroundStyle(.black)
-            .scaledToFill()
+            
+            
         }
         .navigationViewStyle(.stack)
     }
