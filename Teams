@@ -30,7 +30,7 @@ struct FirstNbaView: View {
                     }
                     .navigationTitle("Hoopology")
                     
-                    
+                    Text("hello")
                 }
                 .navigationViewStyle(.stack)
             }
