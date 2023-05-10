@@ -30,7 +30,7 @@ struct Teams: View {
                     }
                     .navigationTitle("Hoopology")
                     
-                    Text("hello")
+                    
                 }
                 .navigationViewStyle(.stack)
             }
