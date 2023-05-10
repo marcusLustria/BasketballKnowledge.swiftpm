@@ -7,17 +7,19 @@
 
 import SwiftUI
 
-struct MyView: View {
+struct Rules:View {
+    
+    @Binding var myBasketballVisits: BasketballTravel
+    
     var body: some View {
-        
-        Text("Defenders can’t interfere with a shot on a downward trajectory")
-        Text("Defenders can legally block or steal the ball")
-        Text("Defenders must leave the paint after three seconds")
-        Text("Each team is allotted a certain number of fouls")
-        Text("Illegal contact results in a foul")
-        
-        
+        NavigationView {
+            VStack{
+                
+                Text("Rules")
+                
+                   
+            }
+        }
     }
-   
+    
 }
-

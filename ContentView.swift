@@ -33,7 +33,8 @@ struct ContentView: View {
                 
                 
                 NavigationLink("Rules") {
-                    Rules(myBasketballVisits: $myBasketballVisits)
+                Rules(myBasketballVisits: $myBasketballVisits)
+                                 
                     
                     
                 }
@@ -54,7 +55,7 @@ struct ContentView: View {
                 .font(.title2)
                 .offset(x: 0, y: -50)
                 NavigationLink("Teams") {
-                    Teams(myBasketballVisits: $myBasketballVisits)
+                    Teams(myBasketBallVisits: $myBasketballVisits)
                     
                     
                 }
