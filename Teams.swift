@@ -1,13 +1,13 @@
 //
-//  FirstNbaView.swift
+//  Teams.swift
 //  BasketballKnowledge
 //
-//  Created by evan deveros  on 5/2/23.
+//  Created by Marcus Lustria on 5/10/23.
 //
 
 import SwiftUI
 
-struct FirstNbaView: View {
+struct Teams: View {
     
     
     @Binding var myBasketBallVisits:BasketballTravel
