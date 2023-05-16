@@ -15,10 +15,20 @@ struct Players:View {
         NavigationView {
             VStack{
                 
-                Text("Players")
+                Text("Current Players")
+                 
+                
+                
+                
+                Text("Retired Players")
+            
+                
+            
                 
                 
             }
+            .navigationViewStyle(.stack)
+           
         }
     }
     

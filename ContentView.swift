@@ -26,6 +26,7 @@ struct ContentView: View {
                 .background(Color.orange)
                 .font(.title2)
                 .offset(x:0, y: 110)
+                .padding()
                 
                 
                 
@@ -42,6 +43,7 @@ struct ContentView: View {
                 .background(Color.orange)
                 .font(.title2)
                 .offset(x:0, y: 200)
+                .padding()
                 
                 
                 NavigationLink("Players") {
@@ -54,6 +56,7 @@ struct ContentView: View {
                 .background(Color.orange)
                 .font(.title2)
                 .offset(x: 0, y: -50)
+                .padding()
                 NavigationLink("Teams") {
                     Teams(myBasketBallVisits: $myBasketballVisits)
                     
@@ -63,6 +66,7 @@ struct ContentView: View {
                 .background(Color.orange)
                 .font(.title2)
                 .offset(x: 0, y: -200)
+                .padding()
                 
                 
                 

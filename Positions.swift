@@ -21,14 +21,14 @@ struct Positions:View {
                 
              
                 
-                NavigationLink("Next Position") {
+                NavigationLink("Shooting Guardd") {
                     Positions2(myBasketballVisits: $myBasketballVisits)
             }
            
             }
-            .navigationViewStyle(.stack)
-        }
-        
+            
+         }
+        .navigationViewStyle(.stack)
     }
     
 }
