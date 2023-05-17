@@ -16,6 +16,12 @@ struct Players:View {
             VStack{
                 
                 Text("Current Players")
+                NavigationLink("Stephen Curry") {
+                    StephenCurry(myBasketballVisits: $myBasketballVisits)
+                    
+                    
+                }
+                
                  
                 
                 
