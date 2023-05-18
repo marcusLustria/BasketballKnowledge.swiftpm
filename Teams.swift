@@ -8,16 +8,12 @@
 import SwiftUI
 
 struct Teams: View {
-    
-    
-    @Binding var myBasketBallVisits:BasketballTravel
-    
     var body: some View {
-       
-                Text("d")
-            }
+        NavigationLink("Go To Next Team"){
+            Teams2()
         }
+        Text("Chicago Bulls")
     
-
-
+    }
+}
 
