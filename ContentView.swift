@@ -58,7 +58,7 @@ struct ContentView: View {
                 .offset(x: 0, y: -50)
                 .padding()
                 NavigationLink("Teams") {
-                    Teams(myBasketBallVisits: $myBasketballVisits)
+                    Teams()
                     
                     
                 }
