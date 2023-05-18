@@ -9,9 +9,11 @@ import SwiftUI
 
 struct Teams: View {
     var body: some View {
-        NavigationLink("Go To Next Page"){
+        NavigationLink("Go To Next Team"){
             Teams2()
         }
+        Text("Chicago Bulls")
+    
     }
 }
 
