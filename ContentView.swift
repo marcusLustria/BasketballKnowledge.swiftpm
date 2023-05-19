@@ -9,8 +9,13 @@ struct ContentView: View {
             
             VStack{
                 Text("Hoopology")
-                    .font(.largeTitle)
-                    .offset(x: 0, y: -200)
+                    .frame(width: 200, height: 50)
+                    .background(.white)
+                    .foregroundColor(.black)
+                    .padding(20)
+                    .shadow(color: .orange, radius: /*@START_MENU_TOKEN@*/10/*@END_MENU_TOKEN@*/, x: /*@START_MENU_TOKEN@*/0.0/*@END_MENU_TOKEN@*/, y: /*@START_MENU_TOKEN@*/0.0/*@END_MENU_TOKEN@*/)
+                    .offset(y: -200)
+                    .font(.title)
                 
                 
                 
@@ -22,28 +27,32 @@ struct ContentView: View {
                 }
                 
                 
-                .foregroundColor(.white)
-                .background(Color.orange)
-                .font(.title2)
-                .offset(x:0, y: 110)
-                .padding()
-                
+                .frame(width: 200, height: 50)
+                .background(.white)
+                .foregroundColor(.black)
+                .cornerRadius(25)
+                .padding(20)
+                .shadow(color: .orange, radius: /*@START_MENU_TOKEN@*/10/*@END_MENU_TOKEN@*/, x: /*@START_MENU_TOKEN@*/0.0/*@END_MENU_TOKEN@*/, y: /*@START_MENU_TOKEN@*/0.0/*@END_MENU_TOKEN@*/)
+                .offset(x: 0, y: 1)
                 
                 
                 
                 
                 
                 NavigationLink("Rules") {
-                Rules(myBasketballVisits: $myBasketballVisits)
-                                 
+                    Rules(myBasketballVisits: $myBasketballVisits)
+                    
                     
                     
                 }
-                .foregroundColor(.white)
-                .background(Color.orange)
-                .font(.title2)
-                .offset(x:0, y: 200)
-                .padding()
+                .frame(width: 200, height: 50)
+                .background(.white)
+                .foregroundColor(.black)
+                .cornerRadius(25)
+                .padding(20)
+                .shadow(color: .orange, radius: /*@START_MENU_TOKEN@*/10/*@END_MENU_TOKEN@*/, x: /*@START_MENU_TOKEN@*/0.0/*@END_MENU_TOKEN@*/, y: /*@START_MENU_TOKEN@*/0.0/*@END_MENU_TOKEN@*/)
+                
+                .offset(x: 0, y: 200)
                 
                 
                 NavigationLink("Players") {
@@ -52,27 +61,42 @@ struct ContentView: View {
                     
                 }
                 
-                .foregroundColor(.white)
-                .background(Color.orange)
-                .font(.title2)
-                .offset(x: 0, y: -50)
-                .padding()
+                .frame(width: 200, height: 50)
+                .background(.white)
+                .foregroundColor(.black)
+                .cornerRadius(25)
+                .padding(20)
+                .shadow(color: .orange, radius: /*@START_MENU_TOKEN@*/10/*@END_MENU_TOKEN@*/, x: /*@START_MENU_TOKEN@*/0.0/*@END_MENU_TOKEN@*/, y: /*@START_MENU_TOKEN@*/0.0/*@END_MENU_TOKEN@*/)
+                .offset(x:0, y: -5)
                 NavigationLink("Teams") {
                     Teams()
                     
                     
                 }
-                .foregroundColor(.white)
-                .background(Color.orange)
-                .font(.title2)
+                .frame(width: 200, height: 50)
+                .background(.white)
+                .foregroundColor(.black)
+                .cornerRadius(25)
+                .padding(20)
+                .shadow(color: .orange, radius: /*@START_MENU_TOKEN@*/10/*@END_MENU_TOKEN@*/, x: /*@START_MENU_TOKEN@*/0.0/*@END_MENU_TOKEN@*/, y: /*@START_MENU_TOKEN@*/0.0/*@END_MENU_TOKEN@*/)
+                
+                
                 .offset(x: 0, y: -200)
-                .padding()
+                
+                
                 
                 
                 
             }
+            .frame(maxWidth: 200,  maxHeight: .infinity)
+            .background(
+            Image("BG")
+                .resizable()
+               .scaledToFill()
+          
+            )
         }
         .navigationViewStyle(.stack)
     }
-       
+    
 }
