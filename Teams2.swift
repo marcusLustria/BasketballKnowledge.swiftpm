@@ -3,7 +3,7 @@ import SwiftUI
 struct Teams2: View {
     var body: some View {
         NavigationLink("Go To Next Team"){
-            Teams2()
+            Teams3()
             VStack{
                 Text("Brooklyn Nets")
                     .font(.largeTitle)

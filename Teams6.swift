@@ -12,7 +12,7 @@ struct Teams6: View {
         NavigationLink("Go To Next Team"){
             Teams7()
             VStack{
-                Text("PHILADELPHIA 76ERS")
+                Text("Chicago Bulls")
                     .font(.largeTitle)
                 Image("Bulls")
                 Text("Zach Lavine")
