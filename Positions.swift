@@ -21,7 +21,7 @@ struct Positions:View {
                 
              
                 
-                NavigationLink("Shooting Guardd") {
+                NavigationLink("Shooting Guard") {
                     Positions2(myBasketballVisits: $myBasketballVisits)
             }
            

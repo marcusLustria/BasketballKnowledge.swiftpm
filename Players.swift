@@ -7,25 +7,8 @@ struct Players:View {
     var body: some View {
         NavigationView {
             VStack{
-                
-                
-                NavigationLink("Stephen Curry") {
+                NavigationLink("Stephen Curry"){
                     StephenCurry(myBasketballVisits: $myBasketballVisits)
-                    
-                }
-                .foregroundColor(.white)
-                .background(Color.orange)
-                .font(.title2)
-                .offset(x: 0, y: -200)
-                .padding(20)
-                .cornerRadius(25)
-                .shadow(color: .orange, radius: 10, x:0, y: 0)
-                
-                
-               
-                
-                NavigationLink("Lebron James"){
-                    LebronJames(myBasketballVisits: $myBasketballVisits)
                     
                     
                 }
@@ -36,8 +19,28 @@ struct Players:View {
                 .padding(20)
                 .shadow(color: .orange, radius: /*@START_MENU_TOKEN@*/10/*@END_MENU_TOKEN@*/, x: /*@START_MENU_TOKEN@*/0.0/*@END_MENU_TOKEN@*/, y: /*@START_MENU_TOKEN@*/0.0/*@END_MENU_TOKEN@*/)
                 .font(.title2)
+                .offset(x: 0, y: -100)
+
                 
-                .offset(x: 0, y: -200)
+                
+               
+                
+                
+               
+                
+                NavigationLink("Lebron James"){
+                    LebronJames(myBasketballVisits: $myBasketballVisits)
+                    
+                
+                }
+                .frame(width: 200, height: 50)
+                .background(.white)
+                .foregroundColor(.black)
+                .cornerRadius(25)
+                .padding(20)
+                .shadow(color: .orange, radius: /*@START_MENU_TOKEN@*/10/*@END_MENU_TOKEN@*/, x: /*@START_MENU_TOKEN@*/0.0/*@END_MENU_TOKEN@*/, y: /*@START_MENU_TOKEN@*/0.0/*@END_MENU_TOKEN@*/)
+                .font(.title2)
+                .offset(x: 0, y: -100)
                
                 
                
@@ -92,7 +95,7 @@ struct Players:View {
                 
                 
                 NavigationLink("Larry Bird"){
-                    KawhiLeonard(myBasketballVisits: $myBasketballVisits)
+                    LarryBird(myBasketballVisits: $myBasketballVisits)
                     
                     
                 }
@@ -103,29 +106,25 @@ struct Players:View {
                 .padding(20)
                 .shadow(color: .orange, radius: /*@START_MENU_TOKEN@*/10/*@END_MENU_TOKEN@*/, x: /*@START_MENU_TOKEN@*/0.0/*@END_MENU_TOKEN@*/, y: /*@START_MENU_TOKEN@*/0.0/*@END_MENU_TOKEN@*/)
                 .font(.title2)
-                
-             
                 .offset(x: 0, y: -200)
-                
-                NavigationLink("Shaquille O'Neal"){
-                    KawhiLeonard(myBasketballVisits: $myBasketballVisits)
-                    
-                    
-                }
-              
-                .font(.title2)
-                .offset(x: 0, y: -200)
-                .frame(width: 200, height: 50)
-                .background(.white)
-                .foregroundColor(.black)
-                .cornerRadius(25)
-                .padding(20)
-                .shadow(color: .orange, radius: /*@START_MENU_TOKEN@*/10/*@END_MENU_TOKEN@*/, x: /*@START_MENU_TOKEN@*/0.0/*@END_MENU_TOKEN@*/, y: /*@START_MENU_TOKEN@*/0.0/*@END_MENU_TOKEN@*/)
+                        
 
                 NavigationLink("Kobe Bryant"){
-                    KawhiLeonard(myBasketballVisits: $myBasketballVisits)
+                    KobeBryant(myBasketballVisits: $myBasketballVisits)
                     
                     
+                }
+                
+                .frame(width: 200, height: 50)
+                .background(.white)
+                .foregroundColor(.black)
+                .cornerRadius(25)
+                .padding(20)
+                .shadow(color: .orange, radius: /*@START_MENU_TOKEN@*/10/*@END_MENU_TOKEN@*/, x: /*@START_MENU_TOKEN@*/0.0/*@END_MENU_TOKEN@*/, y: /*@START_MENU_TOKEN@*/0.0/*@END_MENU_TOKEN@*/)
+                .font(.title2)
+                .offset(x: 0, y: -20)
+                NavigationLink("Shaquille O'Neal"){
+                    ShaquilleONeal(myBasketballVisits: $myBasketballVisits)
                 }
                 .frame(width: 200, height: 50)
                 .background(.white)
@@ -134,8 +133,6 @@ struct Players:View {
                 .padding(20)
                 .shadow(color: .orange, radius: /*@START_MENU_TOKEN@*/10/*@END_MENU_TOKEN@*/, x: /*@START_MENU_TOKEN@*/0.0/*@END_MENU_TOKEN@*/, y: /*@START_MENU_TOKEN@*/0.0/*@END_MENU_TOKEN@*/)
                 .font(.title2)
-               
-                
                 .offset(x: 0, y: -200)
                 
 
@@ -147,8 +144,13 @@ struct Players:View {
                 
                 
             }
+            .frame(maxWidth: 200,  maxHeight: .infinity)
+            .background(
+            Image("BG")
+                .resizable()
+               .scaledToFill()
            
-            
+            )
         }
         .navigationViewStyle(.stack)
     }

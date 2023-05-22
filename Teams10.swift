@@ -10,7 +10,7 @@ import SwiftUI
 struct Teams10: View {
     var body: some View {
         NavigationLink("Go To Next Team"){
-            Teams10()
+            Teams11()
             VStack{
                 Text("Milwaukee Bucks")
                     .font(.largeTitle)

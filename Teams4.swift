@@ -16,7 +16,7 @@ struct Teams4: View {
                     .font(.largeTitle)
                 Image("76ers")
                 Text("Joel Embiid")
-                Image("Joel Embiid")
+                Image("Joel")
                 Text("Averages 23.7 points per game")
             }
         }

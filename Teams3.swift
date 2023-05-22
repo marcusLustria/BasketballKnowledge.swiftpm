@@ -16,7 +16,7 @@ struct Teams3: View {
                     .font(.largeTitle)
                 Image("Nicks")
                 Text("Jalen Brunson")
-                Image("Jalen Brunson")
+                Image("Brunson")
                 Text("Averages 27.8 points per game")
             }
         }
