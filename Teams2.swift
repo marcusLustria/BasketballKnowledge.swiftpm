@@ -4,6 +4,7 @@ struct Teams2: View {
     var body: some View {
         NavigationLink("Go To Next Team"){
             Teams3()
+        }
             VStack{
                 Text("Brooklyn Nets")
                     .font(.largeTitle)
@@ -14,5 +15,5 @@ struct Teams2: View {
             }
         }
     }
-}
+
 
