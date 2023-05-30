@@ -12,12 +12,12 @@ struct Teams11: View {
         NavigationLink("Go To Next Team"){
             Teams12()
             VStack{
-                Text("Denver Nuggets")
+                Text("Atlanta Hawks")
                     .font(.largeTitle)
-                Image("Nuggets")
-                Text("Nikola Jokic")
-                Image("Jokic")
-                Text("Averages 23.8 points per game")
+                Image("Hawks")
+                Text("Trae Young")
+                Image("Trae")
+                Text("Averages 26.2 points per game")
             }
         }
     }

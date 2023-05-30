@@ -10,14 +10,14 @@ import SwiftUI
 struct Teams13: View {
     var body: some View {
         NavigationLink("Go To Next Team"){
-            Teams13()
+            Teams14()
             VStack{
-                Text("Oklahoma City Thunder")
+                Text("Miami Heat")
                     .font(.largeTitle)
-                Image("Thunder")
-                Text("SHAI GILGEOUS-ALEXANDER")
-                Image("shai")
-                Text("Averages 31.4 points per game")
+                Image("Miami")
+                Text("Jimmy Butler")
+                Image("Butler")
+                Text("Averages 29.6 points per game")
             }
         }
     }

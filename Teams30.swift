@@ -10,7 +10,7 @@ import SwiftUI
 struct Teams30: View {
     var body: some View {
         NavigationLink("Go To Next Team"){
-            Teams30()
+            Teams()
         }
     }
 }
