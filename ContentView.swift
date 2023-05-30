@@ -5,6 +5,7 @@ struct ContentView: View {
     @Binding var myBasketballVisits:BasketballTravel
     
     var body: some View {
+        @State var selectedViewIndex = 0
         NavigationView {
             
             VStack{
@@ -83,6 +84,45 @@ struct ContentView: View {
                 
                 .offset(x: 0, y: -200)
                 
+                switch selectedViewIndex {
+                case 0:
+                    Positions()
+                        .opacity(selectedViewIndex == 0 ? 1 : 0)
+                        .transition(.opacity)
+                        
+                case 1:
+                    Rules()
+                        .opacity(selectedViewIndex == 0 ? 1 : 0)
+                        .transition(.opacity)
+                        
+                case 2:
+                    Players()
+                        .opacity(selectedViewIndex == 0 ? 1 : 0)
+                        .transition(.opacity)
+                    
+                case 3:
+                    Teams()
+                        .opacity(selectedViewIndex == 0 ? 1 : 0)
+                        .transition(.opacity)
+                        
+                default:
+                    Text("Default")
+                }
+                ScrollView(.horizontal, showsIndicators: false) {
+                    HStack(spacing: 16) {
+                        ForEach(0..<4){ index in
+                            Button(action: {
+                                selectedViewIndex
+                                = index
+                            }){
+                                VStack{
+                                    Image(systemName: "\(index + 1(.circle")
+                                }
+                            }
+                        }
+                    }
+                }
+                
                 
                 
                 
@@ -98,5 +138,10 @@ struct ContentView: View {
         }
         .navigationViewStyle(.stack)
     }
-    
+    let viewNames =  [
+    "Positions",
+    "Rules",
+    "Players",
+    "Teams"
+    ]
 }
