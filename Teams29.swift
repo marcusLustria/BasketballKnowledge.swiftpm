@@ -15,7 +15,7 @@ struct Teams29: View {
                 Text("New Orlean Pelicans")
                     .font(.largeTitle)
                 Image("pelicans")
-                Text("Cj Mcollum")
+                Text("Cj McCollum")
                 Image("cj")
                 Text("Averages 20.9 points per game")
             }
