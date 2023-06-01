@@ -7,6 +7,8 @@ struct Players:View {
     var body: some View {
         NavigationView {
             VStack{
+            
+                
                 NavigationLink("Stephen Curry"){
                     StephenCurry(myBasketballVisits: $myBasketballVisits)
                     
@@ -136,6 +138,14 @@ struct Players:View {
                 .offset(x: 0, y: -200)
                 
 
+                Text("Current Players and Legends")
+                    .frame(width: 600, height: 50)
+                    .background(.white)
+                    .foregroundColor(.black)
+                    .padding(20)
+                    .shadow(color: .orange, radius:10 , x: /*@START_MENU_TOKEN@*/0.0/*@END_MENU_TOKEN@*/, y: /*@START_MENU_TOKEN@*/0.0/*@END_MENU_TOKEN@*/)
+                    .font(.title)
+                    
                 
                 
                 
