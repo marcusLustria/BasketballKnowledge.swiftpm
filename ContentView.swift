@@ -70,7 +70,7 @@ struct ContentView: View {
                 .shadow(color: .orange, radius: /*@START_MENU_TOKEN@*/10/*@END_MENU_TOKEN@*/, x: /*@START_MENU_TOKEN@*/0.0/*@END_MENU_TOKEN@*/, y: /*@START_MENU_TOKEN@*/0.0/*@END_MENU_TOKEN@*/)
                 .offset(x:0, y: -5)
                 NavigationLink("Teams") {
-                    Teams(myBasketballVisits: $myBasketballVisits)
+                    Teams()
                     
                     
                 }
